@@ -7,3 +7,11 @@ export const setUserDataAction = createAction('__SET_USER_DATA__', function prep
         }
     }
 })
+
+export const setUserInputAction = createAction('__SET_USER_INPUT__', function prepare(inputs) {
+    return {
+        payload: {
+            inputs,
+        }
+    }
+})
